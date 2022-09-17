@@ -101,13 +101,13 @@ body {
     grid-template-rows: repeat(3, minmax(600px, auto));
 }
 .grid-item-2 {
-    background-image: url(/images/desktop/image-transform.jpg);
+    background-image: url(images/desktop/image-transform.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
 }
 .grid-item-3 {
-    background-image: url(/images/desktop/image-stand-out.jpg);
+    background-image: url(images/desktop/image-stand-out.jpg);
     background-size: 100% 100%;
     background-position: center;
 }
@@ -128,12 +128,12 @@ body {
     margin: 0 1em 0 1em;
 }
 .grid-item-5 {
-    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-image: url(images/desktop/image-graphic-design.jpg);
     background-size: 100% 100%;
     background-position: center;
 }
 .grid-item-6 {
-    background-image: url(/images/desktop/image-photography.jpg);
+    background-image: url(images/desktop/image-photography.jpg);
     background-size: 100% 100%;
     background-position: center;
 }
