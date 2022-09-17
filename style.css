@@ -10,8 +10,7 @@
 }
 
 body {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 0 3em 0 3em;
 }
 
 /* NAVBAR SETTINGS */
@@ -23,7 +22,6 @@ body {
     background-position: center;
     height: 100vh;
     width: 100%;
-    
 }
 #menu nav {
     display: flex;
@@ -33,14 +31,13 @@ body {
 }
 #menu .navigation {
     display: inline-block;
-    
 }
 
 #menu .companyName {
     display: block;
     float: left;
     padding-left: 30px;
-    
+    padding-top: 0.3em;
     font-family: var(--boldfont);
     color: white;
     font-size: 1.9rem;
@@ -52,22 +49,21 @@ body {
 }
 #menu ul li  {
     margin-left: 2em;
-
     float: right;
-   
     list-style: none;
+    padding-top: 0.85em;
 }
 #menu ul li a {
     text-decoration: none;
     color: white;
     padding: 5px 15px 5px 15px;
-    font-weight: 300;
+    font-weight:700;
     font-size: 1.2rem;
 }
 #menu ul li a:hover {
     background-color: hsl(196, 82%, 51%);
     border-radius: 25px;
-    }
+    } 
 #menu .title {
     margin-top: 4rem;
     display: flex;
@@ -77,14 +73,12 @@ body {
     font-size: 4em;
     font-family: var(--boldfont);
     word-spacing: 1.3rem;
-
 }
 #menu .arrow {
     display: flex;
     justify-content: center;
     margin-top: 25vh;
 }
-
 .hamburger {
     display: none;
     cursor: pointer;
@@ -96,7 +90,7 @@ body {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: rgb(115, 115, 115)
 }
 
 /* FIRST SECTION */
@@ -105,7 +99,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, minmax(600px, auto));
-    
 }
 .grid-item-2 {
     background-image: url(/images/desktop/image-transform.jpg);
@@ -118,13 +111,10 @@ body {
     background-size: 100% 100%;
     background-position: center;
 }
-
 .grid-item-1,
 .grid-item-4 {
     padding: 6.5rem;
- 
 }
-
 .grid-item-5,
 .grid-item-6  {
     display: flex;
@@ -134,10 +124,9 @@ body {
 }
 .grid-item-5 h3,
 .grid-item-6 h3 {
-padding-bottom: 3em;
-margin: 0 1em 0 1em;
+    padding-bottom: 3em;
+    margin: 0 1em 0 1em;
 }
-
 .grid-item-5 {
     background-image: url(/images/desktop/image-graphic-design.jpg);
     background-size: 100% 100%;
@@ -148,7 +137,6 @@ margin: 0 1em 0 1em;
     background-size: 100% 100%;
     background-position: center;
 }
-
 .grid-wrapper .title-info {
     font-size: 4rem;
     font-weight: 800;
@@ -162,12 +150,10 @@ margin: 0 1em 0 1em;
     margin-bottom: 1rem;
 }
 .grid-wrapper a {
-  
     text-decoration: none;
     font-family: var(--boldfont);
     color: black;
 }
-
 .grid-wrapper a:hover {
     border-bottom: 8px solid yellow;
     border-radius: 7px;
@@ -253,9 +239,7 @@ footer {
     font-weight: bold;
 }
 .links a:hover {
-
     color: white
-
 }
 .icons {
     display: flex;
@@ -270,10 +254,7 @@ footer {
 #icon:hover {
     fill: white
 }
-
-
-
-
+/* MEDIA QUARIES */
 @media only screen and (max-width:992px) {
     
     body {
@@ -293,7 +274,6 @@ footer {
     .grid-item-1,
     .grid-item-4 {
         padding: 3rem;
-     
     }
     .client-testim h1 {
         text-align: center;
@@ -317,10 +297,6 @@ footer {
         width:auto;
         left: 85%;
         position: fixed;
-        
-    }
-    .hamburger .bar {
-
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -340,40 +316,35 @@ footer {
         width: 80%;
         text-align: center;
         transition: 0.3s;
-
-  
     }
   #menu ul li a {
         color: rgb(115, 115, 115) !important;
         font-weight: 700;
-  
     }
     .nav-menu.active {
-    left: 10%; 
-    display: flex;
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    padding: 3em 0 3em 0;
-    gap: 15px;
-    margin-top: 0em;
-    padding-right: 0;
-    border-radius: 20px;
+        left: 10%; 
+        display: flex;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        padding: 3em 0 3em 0;
+        gap: 15px;
+        margin-top: 0em;
+        padding-right: 0;
+        border-radius: 20px;
     }
     #menu .title {
         font-size: 2em;
     }
-    .companyName {
-        position: fixed;
-    }
 }
 @media only screen and (max-width:480px) {
 
- 
     #menu {
         height: 50vh;
     }
     #menu .companyName {
         font-size: 1.2rem;
+        position: fixed;
+        color: rgb(115, 115, 115)
     }
     #menu .title {
         margin-top: 2rem;
@@ -385,12 +356,10 @@ footer {
         justify-content: center;
         margin-top: 24vh;
         height: 15%;
-        
     }
     .grid-wrapper {  
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, minmax(380px, auto)); 
-        
     }
     .grid-item-1,
     .grid-item-4 {
@@ -398,8 +367,8 @@ footer {
     }
     .grid-item-5 h3,
     .grid-item-6 h3 {
-    padding-bottom: 0.5em;
-    margin: 0 1em 0 1em;
+        padding-bottom: 0.5em;
+        margin: 0 1em 0 1em;
     }
     .grid-wrapper .title-info {
         font-size: 2rem; 
@@ -411,7 +380,6 @@ footer {
         line-height: 25px;
         margin-bottom: 0.5rem;
     }
-
     .client-testim h1 {
         padding: 5rem 0 5rem 0;
         text-align: center;
@@ -422,7 +390,6 @@ footer {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-
     .grid-wrapper-testimonials img {
         border-radius: 5rem;
     }
@@ -434,13 +401,10 @@ footer {
     .grid-wrapper-testimonials h2 {
         margin-bottom: 3rem;
     }
-
     .grid-wrapper-testimonials h1 {
-        
         font-size: 1.1rem;
     }
     .grid-wrapper-testimonials h3 {
-
         font-size: 1rem;
     }
     .grid-wrapper-images {
